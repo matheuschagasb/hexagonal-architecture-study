@@ -25,7 +25,7 @@ class HexagonalArchitectureStudyApplicationTests {
 	void deveRetornarDadosMockados() throws Exception {
 		mockMvc.perform(get("/dados"))
 				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.dados[0].cnpj").value("123142141"))
+				.andExpect(jsonPath("$.dados[0].cnpj").value("12345678000199"))
 				.andExpect(jsonPath("$.dados[1].agencia").value(1234))
 				.andExpect(jsonPath("$.dados[1].conta").value(56789))
 				.andExpect(jsonPath("$.dados[1].digito").value(0));
