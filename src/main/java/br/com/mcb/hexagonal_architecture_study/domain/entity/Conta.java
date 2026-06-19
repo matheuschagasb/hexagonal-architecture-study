@@ -7,6 +7,14 @@ public class Conta {
     private final Integer digito;
 
     public Conta(Integer agencia, Integer conta, Integer digito) {
+        if (agencia == null || agencia <= 0) {
+            throw new IllegalArgumentException("Agencia deve ser positiva.");
+        }
+
+        if (conta == null || conta <= 0) {
+            throw new IllegalArgumentException("Numero da conta deve ser positivo.");
+        }
+
         this.agencia = agencia;
         this.conta = conta;
         this.digito = digito;
