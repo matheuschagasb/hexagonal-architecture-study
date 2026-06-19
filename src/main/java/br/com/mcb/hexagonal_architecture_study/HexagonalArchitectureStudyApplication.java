@@ -1,0 +1,13 @@
+package br.com.mcb.hexagonal_architecture_study;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HexagonalArchitectureStudyApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HexagonalArchitectureStudyApplication.class, args);
+	}
+
+}
