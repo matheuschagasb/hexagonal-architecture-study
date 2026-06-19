@@ -1,8 +1,8 @@
 package br.com.mcb.hexagonal_architecture_study.application.port.input;
 
-import java.util.List;
+import br.com.mcb.hexagonal_architecture_study.domain.entity.DadosCliente;
 
 public interface BuscarDadosUseCase {
 
-    List<Object> buscarDados();
+    DadosCliente buscarDados();
 }

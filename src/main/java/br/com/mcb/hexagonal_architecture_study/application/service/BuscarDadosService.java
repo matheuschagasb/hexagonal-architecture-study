@@ -2,9 +2,8 @@ package br.com.mcb.hexagonal_architecture_study.application.service;
 
 import br.com.mcb.hexagonal_architecture_study.application.port.input.BuscarDadosUseCase;
 import br.com.mcb.hexagonal_architecture_study.application.port.output.BuscarDadosOutputPort;
+import br.com.mcb.hexagonal_architecture_study.domain.entity.DadosCliente;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class BuscarDadosService implements BuscarDadosUseCase {
@@ -16,7 +15,7 @@ public class BuscarDadosService implements BuscarDadosUseCase {
     }
 
     @Override
-    public List<Object> buscarDados() {
+    public DadosCliente buscarDados() {
         return buscarDadosOutputPort.buscarDados();
     }
 }
